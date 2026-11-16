@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Java + Spring для Node-разработчика</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('jsc-theme');
+        if (t) document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <button class="icon-btn burger" id="burger" aria-label="Меню">☰</button>
+    <a href="#/" class="logo">
+      <span class="logo-mark">J</span>
+      <span class="logo-text">Java + Spring <small>для Node-разработчика</small></span>
+    </a>
+    <div class="topbar-progress" title="Прогресс курса">
+      <div class="progress"><div class="progress-bar" id="top-progress"></div></div>
+      <span id="top-progress-text">0%</span>
+    </div>
+    <a href="#/reference" class="top-link">Справочник</a>
+    <button class="icon-btn" id="theme-toggle" aria-label="Сменить тему" title="Сменить тему">◐</button>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="search">
+        <input type="search" id="search" placeholder="Поиск по курсу…" autocomplete="off">
+      </div>
+      <nav id="nav"></nav>
+    </aside>
+    <div class="backdrop" id="backdrop"></div>
+    <main class="content" id="content"></main>
+  </div>
+
+  <!-- Порядок важен: сначала хелперы, потом модули, потом приложение -->
+  <script src="assets/js/helpers.js"></script>
+  <script src="assets/js/lessons/m01-start.js"></script>
+  <script src="assets/js/lessons/m02-java-basics.js"></script>
+  <script src="assets/js/lessons/m03-java-advanced.js"></script>
+  <script src="assets/js/lessons/m04-tools.js"></script>
+  <script src="assets/js/lessons/m05-spring-core.js"></script>
+  <script src="assets/js/lessons/m06-web.js"></script>
+  <script src="assets/js/lessons/m07-data.js"></script>
+  <script src="assets/js/lessons/m08-security.js"></script>
+  <script src="assets/js/lessons/m09-testing.js"></script>
+  <script src="assets/js/lessons/m10-production.js"></script>
+  <script src="assets/js/reference.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
